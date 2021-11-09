@@ -1,4 +1,5 @@
 import { Button, ButtonGroup } from '@mui/material'
+import Link from 'next/link'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -26,6 +27,15 @@ const Home: NextPage = () => {
           <Button color="primary">Facebook</Button>
           <Button color="secondary">Youtube</Button>
         </ButtonGroup>
+
+        {/* link */}
+        <Link href="/signin">
+          <a>Go to sign in page</a>
+        </Link>
+        <Link href="/about">
+          <a>Go to about page</a>
+        </Link>
+        
       </main>
 
       <footer className={styles.footer}>

@@ -3,10 +3,11 @@ import React from 'react';
 export interface HeaderProps {
 }
 
-export function Header (props: HeaderProps) {
+function Header (props: HeaderProps) {
   return (
     <div>
-      header
+      render header
     </div>
   );
 }
+export default Header
